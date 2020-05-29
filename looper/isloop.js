@@ -1,23 +1,23 @@
-'use strict';
+'use strict'
 
 //Complete this algo
 const isLoop = (linkedlist) => {
-    // console.log(linkedlist)
+  // console.log(linkedlist)
 
-    let node = linkedlist.head
-    const arr = []
+  let node = linkedlist.head
+  const arr = []
 
-    while (node.next) {
-        if (arr.includes(node.value)) {
-            return true
-        } else {
-            arr.push(node.value)
-        }
+  while (node.next) {
+    if (arr.includes(node.value)) {
+      return true
+    } else {
+      arr.push(node.value)
     }
+    node = node.next
+  }
 
-    return false
-};
-
+  return false
+}
 
 /*
 EXTRA CREDIT:
